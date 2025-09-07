@@ -42,7 +42,6 @@
           });
           const response = await fetch(`/events?${params}`);
           const events = await response.json();
-
           const ctx = document.getElementById("eventChart").getContext("2d");
           new Chart(ctx, {
             type: "bar",
@@ -51,7 +50,7 @@
               datasets: [
                 {
                   label: "Events by Time",
-                  data: events.map((e) => 1), // Count events
+                  data: events.map((e) => 1),
                   backgroundColor: "#007bff",
                 },
               ],

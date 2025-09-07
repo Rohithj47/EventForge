@@ -2,6 +2,7 @@ from confluent_kafka import Consumer, KafkaError
 from cassandra.cluster import Cluster
 from cassandra.query import SimpleStatement
 import json
+import uuid
 from datetime import datetime
 
 # Kafka config

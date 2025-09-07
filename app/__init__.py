@@ -98,7 +98,7 @@ def query_events():
         params.append(event_type)
     
     if conditions:
-        query += " WHERE " + " AND ".join(conditions)
+        query += " WHERE " + " AND ".join(conditions) + " ALLOW FILTERING" # Note: ALLOW FILTERING can have performance implications
     
     try:
         rows = session.execute(query, params)
