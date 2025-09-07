@@ -1,0 +1,4 @@
+flask==2.3.3
+confluent-kafka==2.3.0
+cassandra-driver==3.28.0
+python-dotenv==1.0.0
